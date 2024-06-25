@@ -187,9 +187,20 @@ h2{
   line-height: 1.6;
 }
 
-
-
 /* cards end */
+
+
+/* footer */
+
+footer{
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(41, 40, 40);
+  color: white;
+}
+
+/* footer end */
 
 /* responsive */
 
