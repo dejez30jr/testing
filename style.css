@@ -5,6 +5,7 @@ html,body{
   box-sizing: border-box;
 }
 
+
 /* nav */
 
 .Logo{
@@ -152,10 +153,28 @@ h2{
 .artikel{
   padding: 20px;
   text-align: center;
+  align-items: center;
+}
+
+.artikel-a{
+  height: 250px;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.tombol-a a{
+  text-decoration: none;
+  color: white;
 }
 .tombol{
   padding: 10px;
   margin-top: 10px;
+  background-color: rgb(94, 94, 254); 
+  border-radius: 10px;
+}
+.tombol-a{
+  padding: 10px;
+  margin-top: 75px;
   background-color: rgb(94, 94, 254); 
   border-radius: 10px;
 }
@@ -197,6 +216,10 @@ h2{
   .card-item{
     width: auto;
     margin: 10px;
+  }
+  .tombol-a{
+   margin: 10px;
+   margin-top: 30px;
   }
 }
 
