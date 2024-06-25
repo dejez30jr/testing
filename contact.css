@@ -57,11 +57,11 @@ box-shadow: 0 6px 10px rgb(65, 64, 64);
   background-color: tomato;
   color: white;
   border-radius: 50%;
-  box-shadow: 0 6px 10px black;
 }
 .menu-icon a{
   text-decoration: none; 
   color: rgb(0, 0, 0);
+
 }
 
 /* nav */
@@ -274,7 +274,7 @@ form{
 
 @media (max-width: 376px){
   .login-box{
-    margin-top: 70%;
+    margin-top: 75%;
   }
 }
 
@@ -300,12 +300,11 @@ form{
   .menu-icon{
       align-items: center;
       display: flex;
+      padding: 10px;
   }
   .menu-icon:hover{
-    /* background-color: tomato;
+    /* background-color: tomato; */
     color: white;
     border-radius: 50%;
-    box-shadow: 0 6px 10px black; */
-    display: none;
   }
 }
