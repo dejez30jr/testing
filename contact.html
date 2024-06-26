@@ -22,87 +22,75 @@
 
   <nav>
     <img src="abdel.jpg" class="Logo" />
-  <div class="menu-icon">
-    <i>
-      <a class="ph ph-house" href="index.html"></a>
-    </i>
-  </div>
-    <!-- <div class="menu-icon" id="menu-icon1">
-      <i class="ph ph-list"></i>
+    <div class="menu-icon">
+      <i><a class="ph ph-house" href="index.html"></a></i>
     </div>
-    <ul id="menu-list1" class="hidden1">
-      <li>
-        <a href="index.html">ʜᴏᴍᴇ</a>
-      </li>
-      <li>
-        <a href="contact.html">ᴄᴏɴᴛᴀᴄᴛ</a>
-      </li>
-    </ul> -->
   </nav>
 
   <!-- nav end -->
+
   <div class="container">
-    <div class="login-box">
 
-      <form>
+    <main>
+      <form action="submit_form.php" method="post">
         <h1>Contact us</h1>
-        <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Username</label>
-        </div>
-        <div class="user-box">
-          <input type="email" name="" required="">
-          <label>email</label>
-        </div>
-        <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Subject</label>
-        </div>
-        <div class="user-box">
-          <input type="text" name="" required="" col="30">
-          <label>massage</label>
-        </div>
-        <center>
-          <a href="#">
-            SEND
-            <span></span>
-          </a>
-        </center>
-      </form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <div class="call-source">
-        <div class="phone-icon">
-          <i class="fa-solid fa-envelope fa-xl"></i>
-          <div class="phone-text">
-            <p class="ab">email</p>
-            <P>abdelkumala@gmail.com</P>
-          </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <div class="card-item">
+      <div class="item1">
+        <i class="ph ph-map-pin" id="item-icon"></i>
+        <div class="item2">
+          <strong>Location</strong>
+          <p>Jl. Raya Mabes Hankam No.73, RT.013/RW.002 Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus
+            Ibukota Jakarta 13890.</p>
         </div>
-        <div class="phone-icon">
-          <i class="fa-solid fa-location fa-xl"></i>
-          <div class="phone-text">
-            <p class="ab">Addres</p>
-            <P class="ac">Jl. Raya Mabes Hankam No.73, RT.013/RW.002 Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus
-              Ibukota Jakarta 13890.</P>
-          </div>
+      </div>
+
+      <div class="item1">
+        <i class="ph ph-phone" id="item-icon"></i>
+        <div class="item2">
+          <strong>Phone</strong>
+          <p>+62 822-9427-3068</p>
         </div>
-        <div class="phone-icon">
-          <i class="fa-brands fa-instagram fa-xl"></i>
-          <div class="phone-text">
-            <p class="ab">instagram</p>
-            <P>@abdelforwarder</P>
-          </div>
+      </div>
+
+      <div class="item1">
+        <i class="ph ph-paper-plane-tilt" id="item-icon"></i>
+        <div class="item2">
+         <strong>Email</strong>
+          <p>abdelkumala@gmail.com</p>
         </div>
-        <div class="phone-icon">
-          <i class="fa-solid fa-phone fa-xl"></i>
-          <div class="phone-text">
-            <p class="ab">telpon</p>
-            <P>0822-9427-3068</P>
-          </div>
+      </div>
+
+      <div class="item1">
+        <i class="ph ph-house" id="item-icon"></i>
+        <div class="item2">
+         <strong>Instagram</strong>
+          <p>@abdelforwarder</p>
         </div>
       </div>
     </div>
+
   </div>
+
+  <!-- footer -->
+   <footer>
+    <i>&copy; 2024 abdel forwarder, All rights reserved</i>
+   </footer>
 
   <script src="script.js"></script>
 </body>
