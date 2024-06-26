@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact us</title>
-  <link rel="stylesheet" href="contact.css" />
+  <title>test</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,88 +14,101 @@
     rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <!--   HAK CIPTA DZ30 2024 -->
-  
   <!-- nav -->
 
   <nav>
     <img src="abdel.jpg" class="Logo" />
-    <div class="menu-icon">
-      <i><a class="ph ph-house" href="index.html"></a></i>
+    <div class="menu-icon" id="menu-icon">
+      <i class="ph ph-list"></i>
     </div>
+    <ul id="menu-list" class="hidden">
+      <li>
+        <a href="#">ʜᴏᴍᴇ</a>
+      </li>
+      <li>
+        <a href="contact.html">ᴄᴏɴᴛᴀᴄᴛ</a>
+      </li>
+    </ul>
   </nav>
 
   <!-- nav end -->
 
-  <div class="container">
 
-    <main>
-      <form action="https://formspree.io/f/mwpeeajl" method="POST">
-        <h1>Contact us</h1>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+  <!-- content img slide -->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <img src="back1.jpg" alt="Image 1">
+        <div class="caption">IMPORT EXPORT SOLUTION</div>
+      </div>
+      <div class="slide">
+        <img src="back5.jpg" alt="Image 2">
+        <div class="caption">IMPORT EXPORT SOLUTION</div>
+      </div>
+      <div class="slide">
+        <img src="back6.jpg" alt="Image 3">
+        <div class="caption">IMPORT EXPORT SOLUTION</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+  <!-- content img slide end -->
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+  <!-- cards -->
+  <div class="box">
+  <div class="exp">
+    <b>
+      Our Services Import/Export – Borongan All in – Door To Door – Undername –
+      Custom Clearance Tumbuhan – Textile – Pakaian Ball Press – Alat Kesehatan Dan Lainnya →
+    </b>
+  </div>
+</div>
 
-        <button type="submit">Submit</button>
-      </form>
-    </main>
+  <div class="card">
 
     <div class="card-item">
-      <div class="item1">
-        <i class="ph ph-map-pin" id="item-icon"></i>
-        <div class="item2">
-          <strong>Location</strong>
-          <p>Jl. Raya Mabes Hankam No.73, RT.013/RW.002 Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus
-            Ibukota Jakarta 13890.</p>
-        </div>
-      </div>
-
-      <div class="item1">
-        <i class="ph ph-phone" id="item-icon"></i>
-        <div class="item2">
-          <strong>Phone</strong>
-          <p>+62 822-9427-3068</p>
-        </div>
-      </div>
-
-      <div class="item1">
-        <i class="ph ph-paper-plane-tilt" id="item-icon"></i>
-        <div class="item2">
-         <strong>Email</strong>
-          <p>abdelkumala@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="item1">
-        <i class="ph ph-house" id="item-icon"></i>
-        <div class="item2">
-         <strong>Instagram</strong>
-          <p>@abdelforwarder</p>
-        </div>
+      <img src="custom.jpg" class="ci-jpg" />
+      <div class="artikel">
+        <h2>CUSTOMS CLEARANCE</h2>
+        <p class="title">Tim bea cukai kami selalu siap untuk memeriksa peraturan yang ada dan memberi saran kepada Anda tentang cara
+          menyiapkan dokumen dan apa yang diharapkan selama proses impor/ekspor kargo.</p>
+        <p class="tombol"><a href="#">Read more</a></p>
       </div>
     </div>
 
+    <div class="card-item">
+      <img src="air.jpg" class="ci-jpg" />
+      <div class="artikel-a">
+        <h2>AIR FREIGHT</h2>
+        <p class="title">Jaminan pengiriman tepat waktu dan kondisi terbaik. Dapatkan penawaran
+          terbaik untuk ESTIMASI 4 – 10 Hari.</p>
+          <p class="tombol-a"><a href="#">Read more</a></p>
+      </div>
+    </div>
+
+    <div class="card-item">
+      <img src="pelabuh.jpg" class="ci-jpg" />
+      <div class="artikel-a">
+        <h2>SEA FREIGHT</h2>
+        <p class="title">Pengiriman melalui jalur laut Estimasi Pengiriman 3-6 Minggu. Bergaransi untuk barang Hilang..</p>
+          <p class="tombol-a"><a href="#">Read more</a></p>
+      </div>
+    </div>
   </div>
 
-  <!-- footer -->
-   <footer>
-    <i>&copy; 2024 abdel forwarder, All rights reserved</i>
-   </footer>
-  
-<!--   HAK CIPTA DZ30 2024 -->
+  <footer>
+    <p>&copy; 2024 abdel forwarder, All rights reserved</p>
+  </footer>
 
+  <!-- cards end -->
   <script src="script.js"></script>
 </body>
 
